@@ -1,0 +1,35 @@
+#Configurações para rodar o projeto:
+python -m venv venv
+source venv/bin/activate  # Linux/MacOS
+venv\Scripts\activate     # Windows
+
+#instalação do django e djangoRestframework:
+pip install django djangorestframework
+
+#rodar o projeto:
+python manage.py runserver
+
+
+
+
+
+
+
+
+#Lista de carteiras
+acessar: http://127.0.0.1:8000/api/carteiras/
+
+#Acesso a uma carteira especifica
+http://127.0.0.1:8000/api/carteiras/id
+
+#consultar saldo
+http://127.0.0.1:8000/api/carteiras/3/saldo/
+
+#lista todas as transferências
+http://127.0.0.1:8000/api/transacao/
+
+#Acesso a uma transferência especifica
+http://127.0.0.1:8000/api/transacao/id
+
+#Realiza uma transferência entre contas
+http://127.0.0.1:8000/api/transacao/transferencia/
